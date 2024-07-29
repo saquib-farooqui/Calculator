@@ -251,7 +251,8 @@ while (true)
 
         else
         {
-            break;
+
+                    break;
         }
 }
             else
@@ -268,6 +269,7 @@ while (true)
         }
     else
     {
+            Console.WriteLine("You have succesfully exited the applicaiton");
         break;
     } 
     }
