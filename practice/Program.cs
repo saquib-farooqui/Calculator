@@ -24,12 +24,14 @@ int op;
 bool isValidOption;
 bool isValidNum1;
 bool isValidNum2;
-int number1;
-int number2;
+double number1;
+double number2;
 
 isValidOption = int.TryParse(option, out op);
 while (true)
 {
+   
+
     if (isValidOption && op >= 1 && op <=5) {
         
         if (op == 1)
@@ -38,8 +40,8 @@ while (true)
         num1 =Console.ReadLine();
         Console.Write("Enter the second number: ");
         num2 = Console.ReadLine();
-            isValidNum1 = int.TryParse(num1, out number1);
-            isValidNum2 = int.TryParse(num2, out number2);
+            isValidNum1 = double.TryParse(num1, out number1);
+            isValidNum2 = double.TryParse(num2, out number2);
         if(isValidNum1 && isValidNum2) { 
                 Console.WriteLine("The result of the addition is: " + (number1 + number2));
 
@@ -92,8 +94,8 @@ while (true)
         num1 = Console.ReadLine();
         Console.Write("Enter the second number: ");
         num2 = Console.ReadLine();
-            isValidNum1 = int.TryParse(num1, out number1);
-            isValidNum2 = int.TryParse(num2, out number2);
+            isValidNum1 = double.TryParse(num1, out number1);
+            isValidNum2 = double.TryParse(num2, out number2);
 
             if(isValidNum1 && isValidNum2) {  
         Console.WriteLine("The result of the subtraction is: " + (number1 - number2));
@@ -149,8 +151,8 @@ while (true)
         num1 = Console.ReadLine();
         Console.Write("Enter the second number: ");
         num2 = Console.ReadLine();
-            isValidNum1 = int.TryParse(num1, out number1);
-            isValidNum2 = int.TryParse(num2, out number2);
+            isValidNum1 = double.TryParse(num1, out number1);
+            isValidNum2 = double.TryParse(num2, out number2);
 
     if (isValidNum1 && isValidNum2) {
                 
@@ -203,8 +205,8 @@ while (true)
         num1 = Console.ReadLine();
         Console.Write("Enter the second number: ");
         num2 = Console.ReadLine();
-            isValidNum1 = int.TryParse(num1, out number1);
-            isValidNum2 = int.TryParse(num2, out number2);
+            isValidNum1 = double.TryParse(num1, out number1);
+            isValidNum2 = double.TryParse(num2, out number2);
         if(isValidNum1 && isValidNum2) 
             {      
         Console.WriteLine("The result of the division is: " + (number1 / number2));
