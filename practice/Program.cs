@@ -15,6 +15,7 @@ Console.WriteLine("5. Exit");
 Console.Write("Select an option: ");
 option = Console.ReadLine();
 
+
 string num1;
 string num2;
 string menu;
@@ -29,7 +30,7 @@ int number2;
 isValidOption = int.TryParse(option, out op);
 while (true)
 {
-    if (isValidOption) {
+    if (isValidOption && op >= 1 && op <=5) {
         
         if (op == 1)
     {
@@ -72,18 +73,14 @@ while (true)
 
                 else
                 {
+                    Console.WriteLine("You have succesfully exited the applicaiton");
                     break;
                 }
             }
             else
             {
-                Console.WriteLine("Please reenter");
-                Console.Write("Enter the first number: ");
-                num1 = Console.ReadLine();
-                Console.Write("Enter the second number: ");
-                num2 = Console.ReadLine();
-                isValidNum1 = int.TryParse(num1, out number1);
-                isValidNum2 = int.TryParse(num2, out number2);
+                Console.WriteLine("Invalid Number - renter");
+
             }
        
 
@@ -100,7 +97,7 @@ while (true)
 
             if(isValidNum1 && isValidNum2) {  
         Console.WriteLine("The result of the subtraction is: " + (number1 - number2));
-        Console.Write("Do you want to do antoher one? ");
+        Console.Write("Do you want to do another one? ");
         ans = Convert.ToString(Console.ReadLine());
         if (ans == "yes" || ans == "YES")
         {
@@ -131,20 +128,15 @@ while (true)
 
         else
         {
-            break;
+                    Console.WriteLine("You have succesfully exited the application");
+                    break;
         } 
             
             
             }
             else
             {
-                Console.WriteLine("Please reenter");
-                Console.Write("Enter the first number: ");
-                num1 = Console.ReadLine();
-                Console.Write("Enter the second number: ");
-                num2 = Console.ReadLine();
-                isValidNum1 = int.TryParse(num1, out number1);
-                isValidNum2 = int.TryParse(num2, out number2);
+                Console.WriteLine("Invalid Number - renter");
             }
 
 
@@ -163,7 +155,7 @@ while (true)
     if (isValidNum1 && isValidNum2) {
                 
         Console.WriteLine("The result of the multiplication is: " + (number1 * number2));
-        Console.Write("Do you want to do antoher one? ");
+        Console.Write("Do you want to do another one? ");
         ans = Convert.ToString(Console.ReadLine());
         if (ans == "yes" || ans == "YES")
         {
@@ -192,20 +184,15 @@ while (true)
 
         else
         {
-            break;
+                    Console.WriteLine("You have succesfully exited the application");
+                    break;
         } 
             
           }
 
             else
             {
-                Console.WriteLine("Please reenter");
-                Console.Write("Enter the first number: ");
-                num1 = Console.ReadLine();
-                Console.Write("Enter the second number: ");
-                num2 = Console.ReadLine();
-                isValidNum1 = int.TryParse(num1, out number1);
-                isValidNum2 = int.TryParse(num2, out number2);
+                Console.WriteLine("Invalid Number - renter");
             }
 
 
@@ -221,7 +208,7 @@ while (true)
         if(isValidNum1 && isValidNum2) 
             {      
         Console.WriteLine("The result of the division is: " + (number1 / number2));
-        Console.Write("Do you want to do antoher one? ");
+        Console.Write("Do you want to do another one? ");
         ans = Convert.ToString(Console.ReadLine());
         if (ans == "yes" || ans == "YES")
         {
@@ -251,25 +238,19 @@ while (true)
 
         else
         {
-
+                    Console.WriteLine("You have succesfully exited the application");
                     break;
         }
 }
             else
             {
-                Console.WriteLine("Please reenter");
-                Console.Write("Enter the first number: ");
-                num1 = Console.ReadLine();
-                Console.Write("Enter the second number: ");
-                num2 = Console.ReadLine();
-                isValidNum1 = int.TryParse(num1, out number1);
-                isValidNum2 = int.TryParse(num2, out number2);
+                Console.WriteLine("Invalid Number - renter");
             }
 
         }
     else
     {
-            Console.WriteLine("You have succesfully exited the applicaiton");
+            Console.WriteLine("You have succesfully exited the application");
         break;
     } 
     }
